@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>FD Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">FD Calculator</h1>
+        <div class="input-container">
+            <label for="Deposite-Amount">Deposit Amount:</label>
+            <input type="number" id="Principle" class="Principle" placeholder="Enter Deposite Amount" min="0"  step =0.01 oninput="if(this.value<0)this.value=0;">
+        </div>
+        <div class="input-container">  
+            <label for="rate">Rate:</label>
+            <input type="number" id="rate"class="rate" min="0"placeholder="Enter Rate %" oninput="if(this.value<0)this.value=0;">
+        </div>
+        <div class="input-container">
+            <label for="Year">Year:</label>
+            <input type="number"id="Year"class="Year"placeholder="Enter Year " min="0" step="0.01" oninput="if(this.value<0)this.value=0;">
+        </div>
+        <div class="input-container">
+            <label for="compounding">Compounding:</label>
+            <select id="compound">
+                <option value="1">Yearly</option>
+                <option value="2">Half-Yearly</option>
+                <option value="3">Quarterly</option>
+                <option value="4">One-Third</option>
+                <option value="12">Monthly</option>
+            </select>
+        </div>  
+        <button id="calculate">Calculate</button>
+        
+            <p id="result1">Your Deposit amount is: </p>
+            <p id="result2">Your Intrest is : </p>
+            <p id="result3">Your Total Amount is :</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
