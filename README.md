@@ -7,8 +7,8 @@ It helps users calculate their **maturity amount, interest earned, and total dep
 
 ## 🚀 Live Demo
 
-🔗 Paste your deployed link here:
-👉https://graceful-sherbet-f2d08e.netlify.app/
+🔗 :
+https://graceful-sherbet-f2d08e.netlify.app/
 
 ---
 
